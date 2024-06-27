@@ -21,6 +21,9 @@ public class Main {
             arr[i] = random.nextInt((max - min) + 1) + min;
         }
 
+
+
+
         System.out.println(executorService.submit(new CallableService(arr)).get());
     }
 }
