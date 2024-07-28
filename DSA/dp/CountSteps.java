@@ -6,7 +6,7 @@ public class CountSteps {
     public static void main(String[] args) {
         int n = 4;
         int ans = noOfWays(n);
-        System.out.println("Total way to reach top"+" "+ans);
+        System.out.println(STR."Total way to reach top \{ans}");
     }
 
     private static int noOfWays(int n) {

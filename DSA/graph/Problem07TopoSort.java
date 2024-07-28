@@ -39,7 +39,6 @@ public class Problem07TopoSort {
             }
         }
         topoSort(n,ad);
-        return;
     }
 
     private static void topoSort(int n, ArrayList<Integer>[] ad) {

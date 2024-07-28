@@ -1,4 +1,4 @@
-package coreJava.multithreading.core_multithreading.print12TwentyTimes;
+package coreJava.multithreading.core_multithreading.interthread_communication.print12TwentyTimes;
 
 import coreJava.executor_framework.excecutor_framework.printNumber.Print2;
 

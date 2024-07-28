@@ -1,4 +1,4 @@
-package coreJava.multithreading.core_multithreading.print12TwentyTimes;
+package coreJava.multithreading.core_multithreading.interthread_communication.print12TwentyTimes;
 
 
 public class Print2 implements Runnable{

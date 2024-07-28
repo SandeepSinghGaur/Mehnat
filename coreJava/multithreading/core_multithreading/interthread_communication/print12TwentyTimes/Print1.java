@@ -1,6 +1,4 @@
-package coreJava.multithreading.core_multithreading.print12TwentyTimes;
-
-import java.util.concurrent.locks.Lock;
+package coreJava.multithreading.core_multithreading.interthread_communication.print12TwentyTimes;
 
 public class Print1 implements Runnable{
     private final Object lock;

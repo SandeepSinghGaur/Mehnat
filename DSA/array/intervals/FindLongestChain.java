@@ -7,7 +7,7 @@ public class FindLongestChain {
     public static void main(String[] args) {
         int[][] pairs = new int[][]{{1,2},{7,8},{4,5}};
         int ans = findLongestChain(pairs);
-        System.out.println("Ans"+" "+ans);
+        System.out.println(STR."Ans \{ans}");
     }
 
     private static int findLongestChain(int[][] pairs) {
@@ -17,7 +17,7 @@ public class FindLongestChain {
             if(pairs[i][1]<pairs[i+1][0]){
                 ans++;
             }
-            System.out.println(pairs[i][0] +" "+pairs[i][1]);
+            System.out.println(STR."\{pairs[i][0]} \{pairs[i][1]}");
         }
 
         return ans+1;

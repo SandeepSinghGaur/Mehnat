@@ -1,4 +1,4 @@
-package coreJava.multithreading.core_multithreading.PrintEvenOdd;
+package coreJava.multithreading.core_multithreading.interthread_communication.PrintEvenOdd;
 
 public class PrintOddEven implements Runnable{
     private static int count = 1;

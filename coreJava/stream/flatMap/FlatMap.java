@@ -2,7 +2,6 @@ package coreJava.stream.flatMap;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 /*
@@ -14,15 +13,18 @@ import java.util.stream.Collectors;
 */
 public class FlatMap {
     public static void main(String[] args) {
-        example1();
-        example2();
-        example3();
-        example4();
+        //example1();
+        //example2();
+        //example3();
+        //example4();
         example5();
     }
 
     private static void example5() {
         List<Integer> numbers = Arrays.asList(123, 456, 789);
+        System.out.println("============================================");
+        String.valueOf(123).chars().forEach(System.out::println);
+        System.out.println("============================================");
 
         List<String> digits = numbers.stream()
                 .map(number -> String.valueOf(number).chars().mapToObj(c -> (char) c))  // Map each number to a stream of its digits
