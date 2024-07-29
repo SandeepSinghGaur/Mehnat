@@ -1,12 +1,14 @@
 package DSA.tree;
 
+import com.sun.source.tree.Tree;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class TreeNode {
     public TreeNode left;
     public TreeNode right;
-    int val;
+    public int val;
     public TreeNode(int val, TreeNode left, TreeNode right){
         this.val = val;
         this.left = left;
@@ -40,5 +42,24 @@ public class TreeNode {
         }
 
         return root;
+    }
+
+    public static void printTree(TreeNode root){
+        if(root==null) return;
+        System.out.println(root.val);
+        printTree(root.left);
+        printTree(root.right);
+    }
+    public static void printLevelOrder(TreeNode root){
+        if(root==null) return;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()){
+            TreeNode node = queue.poll();
+            System.out.print(" "+node.val+" ");
+            if(node.left!=null)queue.add(node.left);
+            if(node.right!=null)queue.add(node.right);
+
+        }
     }
 }

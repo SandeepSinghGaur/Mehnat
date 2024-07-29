@@ -21,17 +21,17 @@ public class MergeInterval {
         int[] prev = intervals[0];
 
         for (int i = 1; i < intervals.length; i++) {
-            int[] interval = intervals[i];
-            if (interval[0] <= prev[1]) {
-                prev[1] = Math.max(prev[1], interval[1]);
-            } else {
+            int[] next = intervals[i];
+            if (prev[1] < next[0]) {
                 merged.add(prev);
-                prev = interval;
+                prev = next;
+            }else{
+                prev[1] = Math.max(prev[1], next[1]);
             }
         }
 
         merged.add(prev);
-
+        // convert list to array
         return merged.toArray(new int[merged.size()][]);
     }
 }
