@@ -1,7 +1,7 @@
 package designPattern.multithreading.printEvenOdd;
 
 public class PrintEven implements Runnable{
-    PrintNumber printNumber;
+    private final PrintNumber printNumber;
 
     PrintEven(PrintNumber printNumber){
         this.printNumber = printNumber;
@@ -9,7 +9,7 @@ public class PrintEven implements Runnable{
     @Override
     public void run() {
         synchronized (printNumber.lock){
-            while(printNumber.number<= printNumber.printMax){
+            while(printNumber.number<= printNumber.max){
                 while(printNumber.number%2!=0){
                         try {
                             printNumber.lock.wait();
@@ -18,7 +18,7 @@ public class PrintEven implements Runnable{
                         }
 
                 }
-                if(printNumber.number%2==0){
+                if(printNumber.number<= printNumber.max && printNumber.number%2==0){
                     System.out.println("Even:: "+printNumber.number);
                     printNumber.number++;
                     printNumber.lock.notify();
