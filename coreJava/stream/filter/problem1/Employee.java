@@ -13,7 +13,8 @@ public class Employee {
 
     @Override
     public String toString() {
-        return STR."Employee{name='\{name}\{'\''}, salary=\{salary}, department='\{department}\{'\''}\{'}'}";
+        return "Employee{name='" + name + "', salary=" + salary + ", department='" + department + "'}";
+
     }
 
     public String getName() {

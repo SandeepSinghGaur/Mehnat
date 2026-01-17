@@ -1,0 +1,21 @@
+1-we added the fly method but => every bird can fly in different way or some bird can't fly this is the problem we can handle this by using
+if-else but its a bad design to writting much if-else
+
+Problem => 1-Bad for Readability if we added more if-else
+           2-Testing is difficult
+           3-Difficult for multiple developers to work in parallel
+
+
+ SRP ( Single Responsibility Principal )
+ ========================================
+
+ 1- Every code unit(Method/Class/Package) in the codebase have exactly one well defined responsibility.
+ 2- Exactly one reasons to change
+ 3- Bird class should contain Common Attribute/Method which is common for every type of birds
+
+
+ HOW to identify violation of SRP
+ =================================
+ 1- A method with multiple if/else ( except when multiple if-else is the part of business logic then OK )
+ 2- Monster Method ( method that are doing lot more than what their name is suggesting then to do )
+

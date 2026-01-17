@@ -1,0 +1,8 @@
+Sigleton Design Pattern
+========================
+Ensuring at max only one object of a class can be created ever.
+
+Why we do need Singleton Design pattern ..?
+==========================================
+1- A class whose all object have to shared a common resource
+Ex-Logging libarary , database connection

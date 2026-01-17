@@ -12,7 +12,7 @@ class Consumer implements Runnable {
         try {
             while (true) {
                 int value = queue.take();
-                System.out.println(STR."Consumed: \{value}");
+                System.out.println("Consumed: " + value);
                 Thread.sleep(1000); // Simulate time taken to consume
             }
         } catch (InterruptedException e) {

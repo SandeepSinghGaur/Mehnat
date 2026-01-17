@@ -15,7 +15,7 @@ public class HashMapSort {
         Collections.sort(list,Comparator.comparing(Map.Entry::getKey));
         //list.sort(Map.Entry.comparingByValue());
         for (Map.Entry<String, Integer> entry : list) {
-            System.out.println(STR."\{entry.getKey()}: \{entry.getValue()}");
+            //System.out.println(STR."\{entry.getKey()}: \{entry.getValue()}");
         }
 //        System.out.println("=================================");
 //        list.sort(Comparator.comparing(Map.Entry::getKey));

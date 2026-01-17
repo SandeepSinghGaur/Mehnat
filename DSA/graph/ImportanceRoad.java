@@ -31,9 +31,9 @@ public class ImportanceRoad {
             incommingEdge[v]++;
         }
         for(int i=0;i<ad.length;i++){
-            System.out.printf(STR."\{i}  -> < ");
+            //System.out.printf(STR."\{i}  -> < ");
             for(int j =0;j<ad[i].size();j++){
-                System.out.printf(STR."  \{ad[i].get(j)} ");
+              //  System.out.printf(STR."  \{ad[i].get(j)} ");
             }
             System.out.printf(">");
             System.out.println();

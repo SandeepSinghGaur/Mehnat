@@ -23,6 +23,6 @@ public class ReflectionExample {
         privateField.setAccessible(true);
         MyClass obj = new MyClass();
         privateField.setInt(obj, 42);
-        System.out.println(STR."Private field value: \{privateField.getInt(obj)}");
+        System.out.println("Private field value: " + privateField.getInt(obj));
     }
 }

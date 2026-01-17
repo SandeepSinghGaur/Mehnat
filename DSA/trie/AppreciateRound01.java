@@ -9,7 +9,7 @@ public class AppreciateRound01 {
         // 3,1,2,5,1,14,51
         reverseArray(num);
         for(int i=0;i< num.length;i++){
-            System.out.print(STR."\{num[i]} ");
+            //System.out.print(STR."\{num[i]} ");
         }
     }
 

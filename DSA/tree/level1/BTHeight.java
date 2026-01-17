@@ -10,7 +10,7 @@ public class BTHeight {
     public static void main(String[] args) {
         TreeNode root = TreeNode.makeTree(new Object[]{1,null,2});
         int height = maxDepth(root);
-        System.out.println(STR."Height of Binary Tree : \{height}");
+        //System.out.println(STR."Height of Binary Tree : \{height}");
     }
 
     private static int maxDepth(TreeNode root) {

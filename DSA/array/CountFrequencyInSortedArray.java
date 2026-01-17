@@ -7,7 +7,7 @@ public class CountFrequencyInSortedArray {
         // int ans = countFrequentUsingCountingSort(arr, n);
         int occurrences = countOccurrences(arr, n);
 
-        System.out.println(STR."Number of occurrences of \{n}: \{occurrences}");
+        //System.out.println(STR."Number of occurrences of \{n}: \{occurrences}");
         // System.out.println("Count Frequency In Sorted Array " + ans);
     }
 

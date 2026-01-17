@@ -62,7 +62,7 @@ public class FlatMap {
         );
         List<String> flattenedList  = listOfLists.stream().flatMap(List::stream).collect(Collectors.toList());
         for (String str : flattenedList){
-            System.out.printf(STR." \{str}");
+            System.out.println(str);
         }
         System.out.println();
     }
@@ -77,7 +77,7 @@ public class FlatMap {
                 .flatMap(sentence -> Arrays.stream(sentence.split(" ")))  // Split each sentence into words and flatten
                 .collect(Collectors.toList());
         for (String str : words){
-            System.out.printf(STR." \{str}");
+            System.out.println(str);
         }
         System.out.println();
     }

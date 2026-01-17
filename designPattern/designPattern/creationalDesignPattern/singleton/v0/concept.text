@@ -1,0 +1,39 @@
+
+ Edge Case where Singleton V0 will failed..?
+ =============================================
+ Suppose that there were two classes at the same time they are calling the Database.getInstance() method
+ so both go inside the method of getInstance() and both find instance == NULL and in this senerio eventually created
+ two object. and we know two object is violation of Singleton Design pattern.
+
+
+ Solution for this edge case ..?
+ ================================
+ 1- Use Syncronized method ( Implemeted in V1)
+ -------------------------------------------
+ ex-
+        public synchronized static Database getInstance() {
+               if (instance == null) {
+                   instance = new Database();
+               }
+               return instance;
+           }
+ this is not the best solution because of effeiency
+
+ 2- Do Eager loading of object ( create object in advanced ) Implemeted in V2
+ ----------------------------------------------------------------------------
+    private static Database instance = new Database(); // Eager Loading
+      private Database(){}
+      public static Database getInstance(){
+          return instance;
+      }
+
+ This is not the good solution if in case no one using the object then unnessary creation of object in advanced.
+ 1- Object is created at start of the program
+ 2- Slow down the start up of application
+ 3- Memory cost if object is never needed
+
+
+ 3- Use Two-way lock startgy we have implemeted in V3
+-------------------------------------------------------
+
+

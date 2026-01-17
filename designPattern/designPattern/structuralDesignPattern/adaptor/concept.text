@@ -1,0 +1,16 @@
+ Adaptor==> like laptop adaptor
+ MAC has four USBC-port , if we want to connect HDMI cable how we connect..?
+ Ans- We will buy an adaptor
+
+ Use case where we used Adaptor design pattern=>
+ ===================================================
+ 1- We have to integrate third party payment API for payment and we know in future we can replace that third party service with another
+
+ Step to implement Adaptor Design pattern
+ ==========================================
+ 1- create one interface(PaymentGateWay) we will conatin all the method which will be provided by the third party we can keep name whatever we want
+    this will not impact on third party method
+ 2- create an concrete class(Like RazorpayPaymentGatewayAdaptor) which will implement interface(PaymentGateWay) we give the defination of all the method
+    which is present in interface. we will call the third party method from inside the method.
+ 3- like this way we can implement another third party (Like PayUPaymentGatewayAdaptor) only we have to create the concrete adaptor class and have
+    to implement interface of interface(PaymentGateWay)

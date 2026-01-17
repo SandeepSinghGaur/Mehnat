@@ -16,7 +16,7 @@ public class Problem05RottenOrange {
                 {1,0,1}
         };
         int ans = orangesRotting(grid);
-        System.out.println(STR."Time taken to be whole orange rotten : \{ans}");
+        //System.out.println(STR."Time taken to be whole orange rotten : \{ans}");
 
     }
 
@@ -63,7 +63,7 @@ public class Problem05RottenOrange {
         int ans = Integer.MIN_VALUE;
         for(int i=0;i< time.length;i++){
             for(int j=0;j<time[i].length;j++){
-                System.out.printf(STR." \{time[i][j]} ");
+                //System.out.printf(STR." \{time[i][j]} ");
                 ans = Math.max(ans,time[i][j]);
             }
             System.out.println();

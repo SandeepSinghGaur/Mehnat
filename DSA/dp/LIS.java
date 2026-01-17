@@ -7,7 +7,7 @@ public class LIS {
         int[] dp = new int[n+1];
         dp[0] = 1;
         int ans = getLIS(arr,dp);
-        System.out.println(STR."Length of Longest Increasing SubSequence \{ans}");
+        //System.out.println(STR."Length of Longest Increasing SubSequence \{ans}");
     }
 
     private static int getLIS(int[] arr, int[] dp) {

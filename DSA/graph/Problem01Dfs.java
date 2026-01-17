@@ -38,7 +38,7 @@ public class Problem01Dfs {
 
          */
         boolean ans = findValidPathUsingDfs(n,edges,s,d);
-        System.out.println(STR."Valid Path: \{ans}");
+       // System.out.println(STR."Valid Path: \{ans}");
     }
 
     private static boolean findValidPathUsingDfs(int n, int[][] edges, int source, int destination) {
@@ -53,9 +53,9 @@ public class Problem01Dfs {
             ad[v].add(u);
         }
         for(int i=0;i<ad.length;i++){
-            System.out.printf(STR."\{i}  -> < ");
+            //System.out.printf(STR."\{i}  -> < ");
             for(int j =0;j<ad[i].size();j++){
-                System.out.printf(STR."  \{ad[i].get(j)} ");
+               // System.out.printf(STR."  \{ad[i].get(j)} ");
             }
             System.out.printf(">");
             System.out.println();

@@ -56,7 +56,7 @@ public class R1 {
         if (employees != null) {
             for (Employee emp : employees) {
                 System.out.println(prefix + emp.getEmpName());
-                printEmployeeHierarchy(employeeMap, emp.getEmpId(), STR."\{prefix}   |---------");
+                printEmployeeHierarchy(employeeMap, emp.getEmpId(), prefix + "   |---------");
             }
         }
     }

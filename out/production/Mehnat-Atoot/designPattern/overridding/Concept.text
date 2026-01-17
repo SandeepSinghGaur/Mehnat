@@ -1,0 +1,5 @@
+ 1-When a Child class has a exact same signature + return type . child class is said to be override the
+ method of parents.
+ 2- When a child class has a exact same but different return type as a parents class it will  not allow to compile
+ 3- When a child class has a exact same but different return type but parents methos is private it allow to compile buts its not overriding.
+ 4-

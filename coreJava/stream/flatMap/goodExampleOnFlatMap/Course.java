@@ -21,6 +21,6 @@ public class Course {
 
     @Override
     public String toString() {
-        return STR."Course{name='\{name}\{'\''}, students=\{students}\{'}'}";
+        return "Course::"+name+" "+"students:: "+students;
     }
 }

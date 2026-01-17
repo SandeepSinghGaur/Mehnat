@@ -1,0 +1,52 @@
+
+ When We create Abstract Class
+ =============================
+ 1- we don't want to create the object of that Abstract class.
+     a) but we are going to create Object of its child class
+     b)  Bird b = new Bird() // its not possible because Bird is Abstract Class we can't create object od Abstract Class
+     c) Bird c = new ChildClassOfBird() // we can do this we are creating the object of ChildClassOfBird and Assinging in Bird
+     d) where parents class just like a stamp ( We want to hold object of child )
+
+Why not object of a class
+==========================
+1- When make no logical use
+2- When we dont want to implement one of the method in the class and want to force of its child to implement that method
+
+Abstract Class V/s Interface
+===============================
+if Attribute + Behavior ==> Go with Classes
+if Only Behavior ==> Go With Interface
+
+
+Open-Closed Principal
+========================
+Open for extensibilty and closed for modification
+
+
+
+Liksov's Substitution Principal (LSP)
+======================================
+1- No Child class should deserve any special treatment ( Un-officially Definition )
+2-Object of child class should be able to be subsituted/stored in a variable of parent class without requiring changes in further code.( Officially Definition)
+
+Bird b = new Pigeon();  // this is allowed due to run time polymorphism
+
+ void doSomething(){
+       |
+       |
+       |
+       |
+    Bird b = new Pigeon() // this is allowed due to run time polymorphism
+       |
+       |
+       |
+     b.fly();
+  // Supposed we added new child class penguins we know penguins can't fly but penguines class extends the Bird class
+  // so Penguins class is responsbility to implement the fly method
+
+    Bird b1 = new Penguins();
+    b1.fly(); // because we know Penguins can;t fly
+
+  Ideal Solution ===> if someone can't fly ==>their should not be fly method their
+
+ }

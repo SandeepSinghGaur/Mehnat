@@ -10,7 +10,7 @@ public class FindSubArrayWithGivenSum {
         int[] ans = findSubArray(arr,sum);
 
         for(int i=ans[0];i<=ans[1];i++){
-            System.out.printf(STR." \{arr[i]} ");
+            //System.out.printf(STR." \{arr[i]} ");
         }
 
     }

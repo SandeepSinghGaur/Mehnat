@@ -24,7 +24,7 @@ public class StringOperation {
         }
         hs.forEach((key,val)-> {
             if(val>1){
-                System.out.println(STR."Key \{key} Value \{val}");
+                System.out.println("Key " + key + " Value " + val);
             }
         });
     }

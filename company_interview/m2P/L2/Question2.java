@@ -12,7 +12,7 @@ public class Question2 {
 
          */
         int ans = maxSubArray(arr);
-        System.out.println(STR."Max SubArray Sum \{ans}");
+        System.out.println("Max SubArray Sum " + ans);
 
     }
 

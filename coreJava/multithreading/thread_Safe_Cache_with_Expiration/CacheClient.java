@@ -11,10 +11,11 @@ class CacheClient implements Runnable {
     public void run() {
         try {
             for (int i = 0; i < 10; i++) {
-                String key = STR."key\{i}";
-                String value = STR."value\{i}";
+                String key = "key"+i;
+                String value = "value"+i;
                 cache.put(key, value);
-                System.out.println(STR."\{Thread.currentThread().getName()} put: \{key} = \{value}");
+                System.out.println(Thread.currentThread().getName() + " put: " + key + " = " + value);
+
                 Thread.sleep(500);  // Simulate work
             }
         } catch (InterruptedException e) {

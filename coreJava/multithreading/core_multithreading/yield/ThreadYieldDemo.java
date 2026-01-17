@@ -5,9 +5,9 @@ public class ThreadYieldDemo {
         MyThread myThread = new MyThread();
         Thread thread = new Thread(myThread);
         thread.start();
-        System.out.println(STR."thread priority\{Thread.currentThread().getPriority()}");
+        System.out.println("Child thread priority " + Thread.currentThread().getPriority());
         for (int i=11;i<20;i++){
-            System.out.println(STR."This is Parent Thread\{Thread.currentThread().getName()}"+" "+i);
+            System.out.println("This is Child Class " + Thread.currentThread().getName() + " " + i);
         }
     }
 }

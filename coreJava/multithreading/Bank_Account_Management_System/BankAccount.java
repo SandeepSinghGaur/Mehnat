@@ -15,7 +15,7 @@ class BankAccount {
         lock.lock();
         try {
             balance += amount;
-            System.out.println(STR."\{Thread.currentThread().getName()} deposited: \{amount}, New Balance: \{balance}");
+            System.out.println(Thread.currentThread().getName() + " deposited: " + amount + ", New Balance: " + balance);
         } finally {
             lock.unlock();
         }
@@ -26,9 +26,9 @@ class BankAccount {
         try {
             if (amount <= balance) {
                 balance -= amount;
-                System.out.println(STR."\{Thread.currentThread().getName()} withdrew: \{amount}, New Balance: \{balance}");
+                System.out.println(Thread.currentThread().getName() + " withdrew: " + amount + ", New Balance: " + balance);
             } else {
-                System.out.println(STR."\{Thread.currentThread().getName()} insufficient balance for withdrawal: \{amount}");
+                System.out.println(Thread.currentThread().getName() + " insufficient balance for withdrawal: " + amount);
             }
         } finally {
             lock.unlock();
@@ -38,7 +38,7 @@ class BankAccount {
     public void checkBalance() {
         lock.lock();
         try {
-            System.out.println(STR."\{Thread.currentThread().getName()} Balance: \{balance}");
+            System.out.println(Thread.currentThread().getName() + " Balance: " + balance);
         } finally {
             lock.unlock();
         }

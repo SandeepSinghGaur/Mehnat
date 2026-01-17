@@ -13,6 +13,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return STR."Student{name='\{name}\{'\''}\{'}'}";
+        return "Student{name='" + name + "'}";
+
     }
 }

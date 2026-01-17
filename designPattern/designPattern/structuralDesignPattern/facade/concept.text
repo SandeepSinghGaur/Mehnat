@@ -1,0 +1,4 @@
+
+Where We used Facade..?
+Facade prevents the clients from calling multiple methods in a sequence and instead
+it calls a single method of a facade.

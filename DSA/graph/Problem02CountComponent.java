@@ -12,7 +12,7 @@ public class Problem02CountComponent {
                 {3, 4}
         };
         int ans = countCompleteComponents(n, edges);
-        System.out.println(STR."Number of connected components: \{ans}");
+        //System.out.println(STR."Number of connected components: \{ans}");
     }
 
     private static int countCompleteComponents(int n, int[][] edges) {

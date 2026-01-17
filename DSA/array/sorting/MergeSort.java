@@ -7,7 +7,7 @@ public class MergeSort {
 
             // Print the sorted array
             for (int i : arr) {
-                System.out.print(STR."\{i} ");
+                //System.out.print(STR."\{i} ");
             }
         }
 

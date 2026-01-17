@@ -13,7 +13,7 @@ class Producer implements Runnable {
             int value = 0;
             while (true) {
                 queue.put(value);
-                System.out.println(STR."Produced: \{value}");
+                System.out.println("Produced: " + value);
                 value++;
                 Thread.sleep(500); // Simulate time taken to produce
             }

@@ -29,7 +29,7 @@ public class Test {
         System.out.println(t2.getSum());
         System.out.println("==================");
         long sum =  (t.getSum() + t2.getSum());
-        System.out.println(STR."Sum: \{sum}");
+        System.out.println("Sum: " + sum);
 
 
     }

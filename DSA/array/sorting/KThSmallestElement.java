@@ -8,7 +8,7 @@ public class KThSmallestElement {
         int[] arr = new int[]{10, 5, 4, 3, 48, 6, 2, 33, 53, 10};
         int k = 4;
         int ans = kthSmallestElement(arr,k);
-        System.out.println(STR."kth Smallest Element:  \{ans}");
+        //System.out.println(STR."kth Smallest Element:  \{ans}");
     }
 
     private static int kthSmallestElement(int[] arr, int k) {

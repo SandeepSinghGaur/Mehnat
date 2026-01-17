@@ -43,7 +43,7 @@ public class ExampleOfCallable {
         executorService.shutdown();
 
         // Output total sum of the array
-        System.out.println(STR."Total sum of the array: \{totalSum}");
+        System.out.println("Total sum of the array: " + totalSum);
     }
 
     static class ArraySumTask implements Callable<Integer> {

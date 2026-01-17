@@ -32,7 +32,7 @@ public class Producer implements Runnable {
 
             Thread.sleep(1000);
             taskQueue.add(i);
-            System.out.println(STR."Produced: \{i}");
+            System.out.println("Produced::"+i);
             taskQueue.notifyAll();
         }
     }

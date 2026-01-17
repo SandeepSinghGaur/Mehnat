@@ -1,0 +1,2 @@
+ When a Child class has a exact same signature + return type . child class is said to be override the
+ method of parents

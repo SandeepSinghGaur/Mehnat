@@ -9,7 +9,7 @@ public class Problem03NoOfIsland {
                 {"0", "0", "0", "0", "0"}
         };
         int ans = calculateIsland(grid);
-        System.out.println(STR."No of Island \{ans}");
+        //System.out.println(STR."No of Island \{ans}");
 
 
 

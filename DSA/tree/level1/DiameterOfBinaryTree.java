@@ -8,7 +8,7 @@ public class DiameterOfBinaryTree {
         TreeNode root = TreeNode.makeTree(new Object[]{1,2,3,4,5});
         diameter = 0;
         int ans = calculateDiameter(root);
-        System.out.println(STR."Diameter of Binary Tree:  \{diameter}");
+        //System.out.println(STR."Diameter of Binary Tree:  \{diameter}");
     }
 
     private static int calculateDiameter(TreeNode root) {

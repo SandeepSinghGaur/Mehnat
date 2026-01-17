@@ -29,7 +29,7 @@ public class Consumer implements Runnable {
 
             Thread.sleep(1000);
             int i = taskQueue.remove(0);
-            System.out.println(STR."Consumed: \{i}");
+            System.out.println("Consumed:: "+ i);
             taskQueue.notifyAll();
         }
     }

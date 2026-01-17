@@ -12,7 +12,7 @@ public class Problem08CourseScheduleTopoSort {
                 {0,1}
         };
         boolean ans = canFinish(n,prerequisites);
-        System.out.println(STR."Can finish \{ans}");
+        //System.out.println(STR."Can finish \{ans}");
     }
 
     private static boolean canFinish(int n, int[][] prerequisites) {

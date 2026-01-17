@@ -35,7 +35,9 @@ public class Main {
 
         res.forEach((personKey, numbers) -> {
             Person p = getPerson.get(personKey);
-            System.out.println(STR."\{p.getName()} \{p.getLname()} \{numbers.size()}");
+            System.out.println(
+                    String.format("%s %s %d", p.getName(), p.getLname(), numbers.size())
+            );
         });
     }
 

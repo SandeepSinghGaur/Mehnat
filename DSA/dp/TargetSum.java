@@ -37,7 +37,7 @@ public class TargetSum {
         int[] nums = new int[]{1,1,1,1,1};
         int target = 3;
         int result = findTargetSumWays(nums, target);
-        System.out.println(STR."Result: \{result}");
+        //System.out.println(STR."Result: \{result}");
     }
 
     private static int findTargetSumWays(int[] nums, int target) {

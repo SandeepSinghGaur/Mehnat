@@ -7,7 +7,7 @@ public class RunnableService implements Runnable{
     }
     @Override
     public void run() {
-        System.out.println(STR."i \{this.i}");
+        System.out.println("i " + this.i);
         try {
             Thread.sleep(100);
         } catch (InterruptedException e) {

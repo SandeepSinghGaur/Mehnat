@@ -14,7 +14,7 @@ public class Main {
 
         Collections.sort(student, Comparator.comparing(Student::getCgpa).thenComparing(Student::getName).thenComparing(Student::getId));
         for(Student s : student){
-            System.out.println(STR."Cgpa:  \{s.getCgpa()} \{s.getName()}");
+            //System.out.println(STR."Cgpa:  \{s.getCgpa()} \{s.getName()}");
         }
 
     }

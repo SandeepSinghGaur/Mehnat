@@ -35,7 +35,7 @@ public class SynchronizedBlock {
                 e.printStackTrace();
             }
 
-            System.out.println(STR."Final count: \{synchronizedBlock.getCount()}");
+            System.out.println("Final count: " + synchronizedBlock.getCount());
         }
 
 

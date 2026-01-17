@@ -10,7 +10,7 @@ public class PartyPair {
         dp[0] = 1;
         dp[1] = 1;
         int ans = party(n,dp);
-        System.out.println(STR."Party Pair \{ans}");
+        //System.out.println(STR."Party Pair \{ans}");
     }
 
     private static int party(int n, int[] dp) {

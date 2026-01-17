@@ -40,7 +40,7 @@ public class Problem01Bfs {
 
          */
         boolean ans = findValidPath(n,edges,s,d);
-        System.out.println(STR."Valid Path: \{ans}");
+        //System.out.println(STR."Valid Path: \{ans}");
     }
 
     private static boolean findValidPath(int n, int[][] edges, int source, int destination) {
@@ -55,9 +55,9 @@ public class Problem01Bfs {
             ad[v].add(u);
         }
         for(int i=0;i<ad.length;i++){
-            System.out.printf(STR."\{i}  -> < ");
+            //System.out.printf(STR."\{i}  -> < ");
             for(int j =0;j<ad[i].size();j++){
-                System.out.printf(STR."  \{ad[i].get(j)} ");
+               // System.out.printf(STR."  \{ad[i].get(j)} ");
             }
             System.out.printf(">");
             System.out.println();

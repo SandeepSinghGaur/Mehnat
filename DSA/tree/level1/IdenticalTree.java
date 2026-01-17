@@ -10,7 +10,7 @@ public class IdenticalTree {
         if(ans){
             System.out.println("Both trees are identical");
         }else{
-            System.out.println(STR."Both trees are not identical");
+            System.out.println("Both trees are not identical");
         }
 
     }

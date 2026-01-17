@@ -8,7 +8,7 @@ public class MaxSubSequenceSumNotPickedTwoAdjacentElement {
         dp[0] = arr[0];
         dp[1] = Math.max(dp[0],dp[1]);
         int ans = maxSubSum(arr,dp);
-        System.out.println(STR."MaxSubSequenceSumNotPickedTwoAdjacentElement \{ans}");
+        //System.out.println(STR."MaxSubSequenceSumNotPickedTwoAdjacentElement \{ans}");
     }
 
     private static int maxSubSum(int[] arr, int[] dp) {

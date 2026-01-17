@@ -5,7 +5,7 @@ public class Anagram {
         String s1 = "listen";
         String s2 = "silent";
         boolean ans = checkAnagram(s1,s2);
-        System.out.println(STR."Is String Anagram  \{ans}");
+       // System.out.println(STR."Is String Anagram  \{ans}");
     }
 
     private static boolean checkAnagram(String s1, String s2) {

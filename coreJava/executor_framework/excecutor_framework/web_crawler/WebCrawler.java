@@ -21,7 +21,7 @@ public class WebCrawler {
             visitedUrls.add(url);
             executor.submit(() -> {
                 try {
-                    System.out.println(STR."Crawling: \{url}");
+                    System.out.println("Crawling: " + url);
                     // Download page content and extract links
                     Set<String> links = getLinks(url);
                     // Recursively crawl linked pages

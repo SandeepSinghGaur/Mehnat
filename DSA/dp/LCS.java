@@ -13,7 +13,7 @@ public class LCS {
             Arrays.fill(row, -1);
         }
         int ans = getLCS(s1,s2,n-1,m-1,dp);
-        System.out.println(STR."Length of LCS \{ans}");
+        //System.out.println(STR."Length of LCS \{ans}");
 
     }
 

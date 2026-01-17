@@ -1,0 +1,34 @@
+
+ What are design patterns..?
+ ===========================
+ 1-Implementing design principal in practice.
+ 2-Well defined solution to common software design problem
+
+ Why we learn design patterns..?
+ ================================
+ 1- Its gives us shared vocabulary.
+ 2- It's saves time
+
+ Types of design patterns
+ ==========================
+ 1- Creational design pattern
+ 2- Structural design pattern
+ 3- Behavioral design pattern
+
+ What is Creational design pattern..?
+ ======================================
+ These patterns are designed for class instantiation. They can be either class-creation patterns or object-creational patterns.
+
+
+What is Structural design pattern..?
+=========================================
+These patterns are designed with regard to a class's structure and composition.
+The main goal of most of these patterns is to increase the functionality of the class(es) involved,
+without changing much of its composition.
+
+
+What is Behavioral design pattern..?
+=========================================
+How do classes each other.
+How its is a particular behavior implemented
+

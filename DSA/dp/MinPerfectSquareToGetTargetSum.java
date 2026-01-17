@@ -8,7 +8,7 @@ public class MinPerfectSquareToGetTargetSum {
         int [] dp = new int[n+1];
         Arrays.fill(dp,-1);
         int ans = minPQ(n,dp);
-        System.out.println(STR."Min Perfect Square \{ans}");
+        //System.out.println(STR."Min Perfect Square \{ans}");
     }
 
     private static int minPQ(int n, int[] dp) {

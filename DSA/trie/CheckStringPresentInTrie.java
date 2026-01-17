@@ -9,7 +9,7 @@ public class CheckStringPresentInTrie {
         List<String> names = Arrays.asList("Sandeep","Vikas","Deepu","Aswin","Amit","Mayank","Manju");
         Trie root = new Trie();
         InsertNamesInTrie(names,root);
-        System.out.println(STR."Aswin is Present \{findWord("Aswi", root)}");
+        //System.out.println(STR."Aswin is Present \{findWord("Aswi", root)}");
 
 
     }

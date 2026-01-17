@@ -19,6 +19,7 @@ public class Department {
 
     @Override
     public String toString() {
-        return STR."Department{name='\{name}\{'\''}, courses=\{courses}\{'}'}";
+        return "Department{name='" + name + "', courses=" + courses + "}";
+
     }
 }

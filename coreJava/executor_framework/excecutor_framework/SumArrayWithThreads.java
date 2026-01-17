@@ -29,8 +29,9 @@ public class SumArrayWithThreads {
         long endTime = System.nanoTime();
 
         // Print the sum and time taken
-        System.out.println(STR."Sum of array: \{sum}");
-        System.out.println(STR."Time taken (milliseconds): \{(endTime - startTime) / 1_000_000}");
+        System.out.println("Sum of array: " + sum);
+        System.out.println("Time taken (milliseconds): " + ((endTime - startTime) / 1_000_000));
+
     }
 
     private static long calculateSumWithThreads(int[] array) throws InterruptedException, ExecutionException {

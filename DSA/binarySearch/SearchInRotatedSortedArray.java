@@ -5,7 +5,7 @@ public class SearchInRotatedSortedArray {
         int[] nums = new int[]{ 4,5,6,7,0,1,2}; // 4567 // 012
         int target = 1;
         int ans = search(nums,target);
-        System.out.println(STR."Index \{ans}");
+        //System.out.println(STR."Index \{ans}");
 
     }
 

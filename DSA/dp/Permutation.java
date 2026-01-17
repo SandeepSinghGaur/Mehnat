@@ -9,7 +9,7 @@ public class Permutation {
         List<List<Integer>> ans = permute(nums);
         for(List<Integer>list:ans){
             for(int ele : list){
-                System.out.print(STR."\{ele} ");
+                //System.out.print(STR."\{ele} ");
             }
             System.out.println();
         }

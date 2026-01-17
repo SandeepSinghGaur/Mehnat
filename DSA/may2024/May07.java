@@ -39,7 +39,7 @@ public class May07 {
         ListNode temp = head;
         int i=1;
         while (temp != null) {
-            System.out.println(STR."Element No'\{i} : \{temp.val}");
+            //System.out.println(STR."Element No'\{i} : \{temp.val}");
             i++;
             temp = temp.next;
         }

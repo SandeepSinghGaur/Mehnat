@@ -65,7 +65,7 @@ public class Problem04MultiSourceBfs {
         // Perform BFS
         while (!q.isEmpty()) {
             int node = q.poll();
-            System.out.println(STR."Visited node: \{node}");
+            //System.out.println(STR."Visited node: \{node}");
 
             for (int neighbor : ad[node]) {
                 if (distances[neighbor] == Integer.MAX_VALUE) {

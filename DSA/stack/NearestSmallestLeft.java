@@ -7,7 +7,7 @@ public class NearestSmallestLeft {
         int[] arr = new int[]{5,2,8,10,12,6,1};
         int[] ans = NearestSmallerLeftForEveryElement(arr);
         for (int ele : ans){
-            System.out.printf(STR." \{ele} ");
+           // System.out.printf(STR." \{ele} ");
         }
     }
 

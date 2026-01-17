@@ -29,6 +29,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return STR."Person{name='\{name}\{'\''}, interests=\{interests}\{'}'}";
+        return "Person{name='" + name + "', interests=" + interests + "}";
+
     }
 }
