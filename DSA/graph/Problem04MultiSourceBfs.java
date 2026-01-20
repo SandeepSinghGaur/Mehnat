@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Problem04MultiSourceBfs {
     public static void main(String[] args) {
-        int[][] grid = new int[][]{
+        int[][] grid = {
                 {1, 11},
                 {11, 6},
                 {11, 5},
@@ -21,7 +21,7 @@ public class Problem04MultiSourceBfs {
                 {13, 10}
         };
         int n = 13;
-        int[] source = new int[]{11, 7, 2};
+        int[] source = {11, 7, 2};
         int[] shortestPaths = multiSourceBfs(grid, source, n);
 
         // Print the shortest path lengths

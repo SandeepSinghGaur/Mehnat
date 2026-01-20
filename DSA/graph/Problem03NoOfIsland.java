@@ -2,17 +2,13 @@ package DSA.graph;
 
 public class Problem03NoOfIsland {
     public static void main(String[] args) {
-        String[][] grid = new String[][]{
-                {"1", "1", "1", "1", "0"},
-                {"1", "1", "0", "1", "0"},
-                {"1", "1", "0", "0", "0"},
-                {"0", "0", "0", "0", "0"}
+        String[][] grid = {{"1", "1", "1", "1", "0"},
+                           {"1", "1", "0", "1", "0"},
+                           {"1", "1", "0", "0", "0"},
+                           {"0", "0", "0", "0", "0"}
         };
         int ans = calculateIsland(grid);
-        //System.out.println(STR."No of Island \{ans}");
-
-
-
+        System.out.println("Number of Islands:: "+ans);
 
     }
 
@@ -22,7 +18,7 @@ public class Problem03NoOfIsland {
         int count = 0;
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
-                if(grid[i][j]=="1"){
+                if(grid[i][j].equals("1")){
                     count++;
                     dfs(grid,i,j);
                 }
@@ -33,7 +29,7 @@ public class Problem03NoOfIsland {
     }
 
     private static void dfs(String[][] grid,int i , int j){
-        if(i<0 || j<0 || i>=grid.length || j>=grid[0].length || grid[i][j]=="0"){
+        if(i<0 || j<0 || i>=grid.length || j>=grid[0].length || grid[i][j].equals("0")){
             return;
         }
         grid[i][j] = "0";

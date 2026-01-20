@@ -7,12 +7,9 @@ import java.util.Queue;
 public class Problem08CourseScheduleTopoSort {
     public static void main(String[] args) {
         int n = 2;
-        int[][] prerequisites = new int[][]{
-                {1,0},
-                {0,1}
-        };
+        int[][] prerequisites = {{1,0}, {0,1}};
         boolean ans = canFinish(n,prerequisites);
-        //System.out.println(STR."Can finish \{ans}");
+        System.out.println("Can Finish:: "+ans);
     }
 
     private static boolean canFinish(int n, int[][] prerequisites) {

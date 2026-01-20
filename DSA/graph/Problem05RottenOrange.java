@@ -16,7 +16,7 @@ public class Problem05RottenOrange {
                 {1,0,1}
         };
         int ans = orangesRotting(grid);
-        //System.out.println(STR."Time taken to be whole orange rotten : \{ans}");
+        System.out.println("Time taken to whole orange rotten::"+ans);
 
     }
 
