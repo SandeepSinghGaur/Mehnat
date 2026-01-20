@@ -6,10 +6,10 @@ import java.util.*;
 
 public class MergeInterval {
     public static void main(String[] args) {
-        int [][] intervals = new int[][]{{1,4},{4,5}};
+        int [][] intervals ={{1,4},{4,5}};
         int [][] ans = mergeInterval(intervals);
         for(int [] a : ans){
-            //System.out.println(STR."{ \{a[0]} \{a[1]} }");
+            System.out.println(" "+a[0] +" "+a[1]);
         }
 
     }
