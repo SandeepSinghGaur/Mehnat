@@ -1,7 +1,5 @@
 package DSA.array.intervals;
 
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.*;
 
 public class MergeInterval {
@@ -15,7 +13,13 @@ public class MergeInterval {
     }
 
     private static int[][] mergeInterval(int[][] intervals) {
-        Arrays.sort(intervals, Comparator.comparing(a->a[0]));
+        Arrays.sort(intervals,
+    (a, b) -> {
+        if (a[0] != b[0]) return a[0] - b[0];
+        return b[1] - a[1];
+    }
+);
+
 
         List<int[]> merged = new ArrayList<>();
         int[] prev = intervals[0];
