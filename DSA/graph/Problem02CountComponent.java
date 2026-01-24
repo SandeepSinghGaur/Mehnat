@@ -4,20 +4,15 @@ import java.util.ArrayList;
 
 public class Problem02CountComponent {
     public static void main(String[] args) {
-        int n = 6; //[[0,1],[0,2],[1,2],[3,4]]
-        int[][] edges = {
-                {0, 1},
-                {0, 2},
-                {1, 2},
-                {3, 4}
-        };
+        int n = 6;
+        int[][] edges = {{0, 1},{0, 2},{1, 2},{3, 4}};
         int ans = countCompleteComponents(n, edges);
-        //System.out.println(STR."Number of connected components: \{ans}");
+        System.out.println("Number of connected components: "+ans);
     }
 
     private static int countCompleteComponents(int n, int[][] edges) {
-        ArrayList<Integer>[] ad = (ArrayList<Integer>[]) new ArrayList[n];
-        for (int i = 0; i < n; i++) {
+        ArrayList<Integer>[] ad = new ArrayList[n];
+        for (int i = 0; i < ad.length; i++) {
             ad[i] = new ArrayList<>();
         }
         for (int i = 0; i < edges.length; i++) {

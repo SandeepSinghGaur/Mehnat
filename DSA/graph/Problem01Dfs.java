@@ -4,19 +4,8 @@ import java.util.ArrayList;
 
 public class Problem01Dfs {
     public static void main(String[] args) {
-        int n = 10; //[[2,9],[7,8],[5,9],[7,2],[3,8],[2,8],[1,6],[3,0],[7,0],[8,5]]
-        int[][] edges = {
-                {2, 9},
-                {7, 8},
-                {5, 9},
-                {7, 2},
-                {3, 8},
-                {2, 8},
-                {1, 6},
-                {3, 0},
-                {7, 0},
-                {8, 5}
-        };
+        int n = 10;
+        int[][] edges = {{2, 9},{7, 8},{5, 9},{7, 2},{3, 8},{2, 8},{1, 6},{3, 0},{7, 0},{8, 5}};
         int s = 1;
         int d = 0;
         /*
@@ -30,20 +19,14 @@ public class Problem01Dfs {
           7-><8,2,0>
           8-><7,3,2,5>
           9-><2,5>
-
-
-
-
-
-
          */
         boolean ans = findValidPathUsingDfs(n,edges,s,d);
-       // System.out.println(STR."Valid Path: \{ans}");
+       System.out.println("Valid Path: "+ans);
     }
 
     private static boolean findValidPathUsingDfs(int n, int[][] edges, int source, int destination) {
-        ArrayList<Integer>[] ad = (ArrayList<Integer>[]) new ArrayList[n + 1];
-        for (int i = 0; i <= n; i++) {
+        ArrayList<Integer>[] ad = new ArrayList[n];
+        for (int i = 0; i <ad.length; i++) {
             ad[i] = new ArrayList<>();
         }
         for (int i = 0; i < edges.length; i++) {
@@ -53,14 +36,14 @@ public class Problem01Dfs {
             ad[v].add(u);
         }
         for(int i=0;i<ad.length;i++){
-            //System.out.printf(STR."\{i}  -> < ");
+            System.out.printf(i+"  -> <");
             for(int j =0;j<ad[i].size();j++){
-               // System.out.printf(STR."  \{ad[i].get(j)} ");
+               System.out.printf(" "+ad[i].get(j)+" ");
             }
             System.out.printf(">");
             System.out.println();
         }
-        boolean isVisited[] = new boolean[n+1];
+        boolean isVisited[] = new boolean[n];
         dfs(ad,isVisited,source,destination);
         return isVisited[destination];
     }

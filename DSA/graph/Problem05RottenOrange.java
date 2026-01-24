@@ -10,11 +10,7 @@ public class Problem05RottenOrange {
           1-> fresh orange
           2-> rotten orange
          */
-        int[][] grid = new int[][]{
-                {2,1,1},
-                {0,1,1},
-                {1,0,1}
-        };
+        int[][] grid = new int[][]{{2,1,1},{0,1,1},{1,0,1}};
         int ans = orangesRotting(grid);
         System.out.println("Time taken to whole orange rotten::"+ans);
 
@@ -63,7 +59,7 @@ public class Problem05RottenOrange {
         int ans = Integer.MIN_VALUE;
         for(int i=0;i< time.length;i++){
             for(int j=0;j<time[i].length;j++){
-                //System.out.printf(STR." \{time[i][j]} ");
+                System.out.printf(" %d ",time[i][j]);
                 ans = Math.max(ans,time[i][j]);
             }
             System.out.println();

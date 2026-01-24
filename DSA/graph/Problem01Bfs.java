@@ -7,18 +7,7 @@ import java.util.Queue;
 public class Problem01Bfs {
     public static void main(String[] args) {
         int n = 10;
-        int[][] edges = {
-                {2, 9},
-                {7, 8},
-                {5, 9},
-                {7, 2},
-                {3, 8},
-                {2, 8},
-                {1, 6},
-                {3, 0},
-                {7, 0},
-                {8, 5}
-        };
+        int[][] edges = {{2, 9},{7, 8},{5, 9},{7, 2},{3, 8},{2, 8},{1, 6},{3, 0},{7, 0},{8, 5}};
         int s = 1;
         int d = 0;
         /*
@@ -32,20 +21,14 @@ public class Problem01Bfs {
           7-><8,2,0>
           8-><7,3,2,5>
           9-><2,5>
-
-
-
-
-
-
          */
         boolean ans = findValidPath(n,edges,s,d);
         System.out.println("Valid Path::"+ans);
     }
 
     private static boolean findValidPath(int n, int[][] edges, int source, int destination) {
-        ArrayList<Integer>[] ad = (ArrayList<Integer>[]) new ArrayList[n + 1];
-        for (int i = 0; i <= n; i++) {
+        ArrayList<Integer>[] ad = new ArrayList[n];
+        for (int i = 0; i < ad.length; i++) {
             ad[i] = new ArrayList<>();
         }
         for (int i = 0; i < edges.length; i++) {
@@ -55,15 +38,15 @@ public class Problem01Bfs {
             ad[v].add(u);
         }
         for(int i=0;i<ad.length;i++){
-            //System.out.printf(STR."\{i}  -> < ");
+            System.out.printf(i+"  -> <");
             for(int j =0;j<ad[i].size();j++){
-               // System.out.printf(STR."  \{ad[i].get(j)} ");
+               System.out.printf(" "+ad[i].get(j)+" ");
             }
             System.out.printf(">");
             System.out.println();
         }
         Queue<Integer> q = new LinkedList<>();
-        boolean visited[] = new boolean[n + 1];
+        boolean visited[] = new boolean[n];
         q.add(source);
         visited[source] = true;
         while (!q.isEmpty()) {

@@ -5,21 +5,7 @@ import java.util.*;
 
 public class Problem04MultiSourceBfs {
     public static void main(String[] args) {
-        int[][] grid = {
-                {1, 11},
-                {11, 6},
-                {11, 5},
-                {5, 2},
-                {5, 4},
-                {2, 3},
-                {4, 8},
-                {3, 12},
-                {3, 9},
-                {8, 7},
-                {9, 13},
-                {7, 10},
-                {13, 10}
-        };
+        int[][] grid = {{1, 11},{11, 6},{11, 5},{5, 2},{5, 4},{2, 3},{4, 8},{3, 12},{3, 9},{8, 7},{9, 13},{7, 10},{13, 10}};
         int n = 13;
         int[] source = {11, 7, 2};
         int[] shortestPaths = multiSourceBfs(grid, source, n);
@@ -32,8 +18,8 @@ public class Problem04MultiSourceBfs {
     }
 
     private static int[] multiSourceBfs(int[][] grid, int[] source, int n) {
-        ArrayList<Integer>[] ad = (ArrayList<Integer>[]) new ArrayList[n + 1];
-        for (int i = 0; i <= n; i++) {
+        ArrayList<Integer>[] ad = new ArrayList[n+1];
+        for (int i = 0; i <ad.length; i++) {
             ad[i] = new ArrayList<>();
         }
         for (int i = 0; i < grid.length; i++) {
@@ -53,7 +39,7 @@ public class Problem04MultiSourceBfs {
 
         // Initialize the queue and distances array
         Queue<Integer> q = new LinkedList<>();
-        int[] distances = new int[n + 1];
+        int[] distances = new int[n+1];
         Arrays.fill(distances, Integer.MAX_VALUE);
 
         // Add all source nodes to the queue and set their distances to 0
@@ -65,8 +51,7 @@ public class Problem04MultiSourceBfs {
         // Perform BFS
         while (!q.isEmpty()) {
             int node = q.poll();
-            //System.out.println(STR."Visited node: \{node}");
-
+            System.out.println("Visited node: "+node);
             for (int neighbor : ad[node]) {
                 if (distances[neighbor] == Integer.MAX_VALUE) {
                     q.add(neighbor);

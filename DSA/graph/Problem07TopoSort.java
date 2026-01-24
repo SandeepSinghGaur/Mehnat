@@ -7,26 +7,13 @@ import java.util.Queue;
 public class Problem07TopoSort {
     public static void main(String[] args) {
         int n = 10;
-        int[][] edges = {
-                {2, 1}, // it means from node 2 to 1 there is an edge
-                {2, 3},
-                {2, 7},
-                {3, 4},
-                {3, 5},
-                {3, 7},
-                {7, 6},
-                {7, 5},
-                {8, 2},
-                {9, 1},
-                {10,3}
-        };
-      createAdjancencyList(n,edges);
+        int[][] edges = {{2, 1},{2, 3},{2, 7},{3, 4},{3, 5},{3, 7},{7, 6},{7, 5},{8, 2},{9, 1},{10,3}};
+        createAdjancencyList(n,edges);
     }
 
     private static void createAdjancencyList(int n, int[][] edges) {
-        ArrayList<Integer>[] ad = (ArrayList<Integer>[] ) new ArrayList[n+1];
-
-        for(int i=0;i<=n;i++){
+        ArrayList<Integer>[] ad = new ArrayList[n+1];
+        for(int i=0;i<ad.length;i++){
             ad[i] = new ArrayList<>();
         }
         for(int i=0;i<=n;i++){
