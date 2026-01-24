@@ -1,4 +1,4 @@
-package appreiate;
+package company_interview.appreiate;
 
 import java.util.HashSet;
 

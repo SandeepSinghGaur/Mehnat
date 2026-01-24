@@ -6,7 +6,7 @@ import java.util.Queue;
 
 public class Problem01Bfs {
     public static void main(String[] args) {
-        int n = 10; //[[2,9],[7,8],[5,9],[7,2],[3,8],[2,8],[1,6],[3,0],[7,0],[8,5]]
+        int n = 10;
         int[][] edges = {
                 {2, 9},
                 {7, 8},
@@ -40,7 +40,7 @@ public class Problem01Bfs {
 
          */
         boolean ans = findValidPath(n,edges,s,d);
-        //System.out.println(STR."Valid Path: \{ans}");
+        System.out.println("Valid Path::"+ans);
     }
 
     private static boolean findValidPath(int n, int[][] edges, int source, int destination) {

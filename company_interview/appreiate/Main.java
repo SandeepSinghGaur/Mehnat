@@ -1,7 +1,6 @@
-package appreiate;
+package company_interview.appreiate;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Main {
 
