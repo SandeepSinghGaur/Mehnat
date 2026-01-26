@@ -5,6 +5,7 @@ public class KokoEatingBanana {
         int[] piles = {3,6,7,11};
         int h = 8;
         int ans = minEatingSpeed(piles,h);
+        System.out.println("Minimum eating speed:: "+ans);
     }
 
     private static int minEatingSpeed(int[] piles, int h) {
